@@ -1,43 +1,17 @@
-import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing/Pricing";
-import FAQ from "@/components/FAQ";
-import Logos from "@/components/Logos";
-import Benefits from "@/components/Benefits/Benefits";
+import Hero from "@/components/hero";
+import ServiceSection from "@/components/service-section";
+import AdManagerSection from "@/components/ad-manager-section";
+import InquirySection from "@/components/Inquiry-section";
 import Container from "@/components/Container";
-import Section from "@/components/Section";
-import Stats from "@/components/Stats";
-import CTA from "@/components/CTA";
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <>
-      <Hero />
-      <Logos />
       <Container>
-        <Benefits />
-
-        <Section
-          id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
-        >
-          <Pricing />
-        </Section>
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
-
-        <Stats />
-        
-        <CTA />
+        <Hero />
+        <ServiceSection />
+        <AdManagerSection />
+        <InquirySection />
       </Container>
     </>
   );

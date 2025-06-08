@@ -9,10 +9,25 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			sans: ['Pretendard', 'sans-serif'],
+		},
+		fontSize: {
+			'head-btn': ['16px', { lineHeight: '1', letterSpacing: '-0.05em' }], // 장평 95%
+			'title': ['32px', { lineHeight: '43px', letterSpacing: '-0.02em' }], // 자간 -20, 장평 98%
+			'body': ['16px', { lineHeight: '27px', letterSpacing: '0em' }], // 자간 0, 장평 100%
+			'body-btn': ['20px', { lineHeight: '1', letterSpacing: '-0.05em' }], // 장평 95%
+			'page-summary': ['25px', { lineHeight: '38px', letterSpacing: '0.02em' }], // 자간 +20
+			'sub-head': ['22px', { lineHeight: '1', letterSpacing: '-0.02em' }],
+			'footer-text': ['15px', { lineHeight: '26px', letterSpacing: '0em' }],
+			'footer-btn': ['14px', { lineHeight: '1', letterSpacing: '0em' }],
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			primary:"#e3582a",
+			"section-2" : "#ededed",
+			"section-3" : "#f7f7f7",
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'

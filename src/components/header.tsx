@@ -10,12 +10,12 @@ import {Button} from "@/components/ui/button";
 const Header: React.FC = () => {
 
     return (
-        <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full h-10">
+        <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full h-20 bg-white">
             <Container className="!px-0">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center px-10 h-20">
+                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center px-10 h-20 bg-white">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 w-40 h-[22px] relative">
-                        <Image src="/images/logo.png" alt="logo" fill  style={{
+                        <Image src="/images/header-logo.png" alt="logo" fill  style={{
                             objectFit: "fill",
                         }}/>
 
