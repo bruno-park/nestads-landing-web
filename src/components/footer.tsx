@@ -1,69 +1,52 @@
-import Link from 'next/link';
-import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { siteDetails } from '@/data/siteDetails';
-import { footerDetails } from '@/data/footer';
-import { getPlatformIconByName } from '@/utils';
-
-const Footer: React.FC = () => {
-    return (
-        <footer className="bg-hero-background text-foreground py-10">
-            <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div>
-                    <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
-                            {siteDetails.siteName}
-                        </h3>
-                    </Link>
-                    <p className="mt-3.5 text-foreground-accent">
-                        {footerDetails.subheading}
-                    </p>
-                </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul className="text-foreground-accent">
-                        {footerDetails.quickLinks.map(link => (
-                            <li key={link.text} className="mb-2">
-                                <Link href={link.url} className="hover:text-foreground">{link.text}</Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
-
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
-
-                    {footerDetails.socials && (
-                        <div className="mt-5 flex items-center gap-5 flex-wrap">
-                            {Object.keys(footerDetails.socials).map(platformName => {
-                                if (platformName && footerDetails.socials[platformName]) {
-                                    return (
-                                        <Link
-                                            href={footerDetails.socials[platformName]}
-                                            key={platformName}
-                                            aria-label={platformName}
-                                        >
-                                            {getPlatformIconByName(platformName)}
-                                        </Link>
-                                    )
-                                }
-                            })}
-                        </div>
-                    )}
-                </div>
+const Footer = () => {
+  return (
+    <footer className="bg-[#241c1a] px-4 py-6 text-white md:px-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row md:items-start">
+        {/* 로고 및 주소 */}
+        <div className="flex flex-col gap-2">
+          <Image
+            src="/images/footer-logo.png" // 실제 로고 이미지 경로로 교체
+            alt="Wisebirds Logo"
+            width={100}
+            height={24}
+          />
+          <div>
+            <div className="whitespace-pre-line py-2 text-sm leading-relaxed text-white">
+              주식회사 와이즈버즈
+              <br />
+              경기도 성남시 수정구 금토로 69 다우디지털스퀘어 5층
             </div>
-            <div className="mt-8 md:text-center text-foreground-accent px-6">
-                <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
-                <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p>
-            </div>
-        </footer>
-    );
+          </div>
+        </div>
+
+        {/* 연락처 */}
+        <div className="self-end py-2 text-sm leading-relaxed text-white">
+          Tel. 02-538-8897 / Email. sales@nestads.com
+          <br />
+          대표자명 : 김종원, 최호준&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 사업자등록번호
+          : 703-86-00909
+        </div>
+
+        {/* 버튼 영역 */}
+        <div className="flex gap-2 self-end py-2">
+          <Link href="/privacy-policy">
+            <span className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black">
+              개인정보처리방침
+            </span>
+          </Link>
+          <Link href="https://www.wisebirds.ai" target="_blank">
+            <span className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black">
+              Wisebirds
+            </span>
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

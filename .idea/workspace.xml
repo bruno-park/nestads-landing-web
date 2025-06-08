@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ad-server-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/marketing-content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +132,7 @@
       <workItem from="1748563852123" duration="882000" />
       <workItem from="1749361226246" duration="7476000" />
       <workItem from="1749382670086" duration="98000" />
-      <workItem from="1749382856091" duration="1098000" />
+      <workItem from="1749382856091" duration="6545000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749383319058</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wip">
+      <option name="closed" value="true" />
+      <created>1749383979029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749383979029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
