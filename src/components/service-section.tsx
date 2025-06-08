@@ -1,18 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Section from "@/components/layout/section";
 
-const ServiceSection= () => {
-    return (
-        <section
-            id="service"
-        >
-            <div className="bg-section-2 h-[670px] px-[140px]">
-                <p>123</p>
-
-
-            </div>
-        </section>
-    );
+const ServiceSection = () => {
+  return (
+    <Section id="service" className="bg-section-2">
+      <div>
+        <p>123</p>
+      </div>
+    </Section>
+  );
 };
 
 export default ServiceSection;

@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
+import Section from "@/components/layout/section";
 
-const InquirySection= () => {
-    return (
-        <section
-            id="inquiry"
-        >
-            <div className="bg-white h-[670px] px-[140px]">
-                <p>123</p>
-
-
-            </div>
-        </section>
-    );
+const InquirySection = () => {
+  return (
+    <Section id="inquiry" className="bg-white">
+      <div>
+        <p>123</p>
+      </div>
+    </Section>
+  );
 };
 
 export default InquirySection;

@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
+import Section from "@/components/layout/section";
 
-const AdManagerSection= () => {
-    return (
-        <section
-            id="ad-manager-service"
-        >
-            <div className="bg-section-3 h-[670px] px-[140px]">
-                <p>123</p>
-
-
-            </div>
-        </section>
-    );
+const AdManagerSection = () => {
+  return (
+    <Section id="ad-manager-service" className="bg-section-3">
+      <div>
+        <p>123</p>
+      </div>
+    </Section>
+  );
 };
 
 export default AdManagerSection;
