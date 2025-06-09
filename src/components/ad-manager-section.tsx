@@ -4,7 +4,6 @@ import React from "react";
 import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
 import Image from "next/image";
-import { Variants } from "framer-motion";
 import Label from "@/components/ui/label";
 
 // const containerVariants: Variants = {

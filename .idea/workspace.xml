@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppStoreButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Benefits/BenefitBullet.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Benefits/BenefitSection.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Benefits/Benefits.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CTA.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FAQ.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logos.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PlayStoreButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pricing/Pricing.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pricing/PricingColumn.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SectionTitle.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Stats.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testimonials.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-server-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-server-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/marketing-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/marketing-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/accordion.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +120,7 @@
       <workItem from="1749361226246" duration="7476000" />
       <workItem from="1749382670086" duration="98000" />
       <workItem from="1749382856091" duration="9240000" />
-      <workItem from="1749434282504" duration="17463000" />
+      <workItem from="1749434282504" duration="17740000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -183,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749390227751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: layout 정의">
+      <option name="closed" value="true" />
+      <created>1749461447623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749461447623</updated>
+    </task>
+    <task id="LOCAL-00006" summary="wip">
+      <option name="closed" value="true" />
+      <created>1749461535105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749461535105</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +188,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: layout 정의" />
     <MESSAGE value="wip" />
     <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
