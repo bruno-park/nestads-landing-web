@@ -7,39 +7,39 @@ import Image from "next/image";
 import { Variants } from "framer-motion";
 import Label from "@/components/ui/label";
 
-const containerVariants: Variants = {
-  offscreen: {
-    opacity: 0,
-    y: 100,
-  },
-  onscreen: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.2,
-      duration: 0.9,
-      delayChildren: 0.2,
-      staggerChildren: 0.1,
-    },
-  },
-};
+// const containerVariants: Variants = {
+//   offscreen: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   onscreen: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.2,
+//       duration: 0.9,
+//       delayChildren: 0.2,
+//       staggerChildren: 0.1,
+//     },
+//   },
+// };
 
-export const childVariants = {
-  offscreen: {
-    opacity: 0,
-    x: -50,
-  },
-  onscreen: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.2,
-      duration: 1,
-    },
-  },
-};
+// export const childVariants = {
+//   offscreen: {
+//     opacity: 0,
+//     x: -50,
+//   },
+//   onscreen: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.2,
+//       duration: 1,
+//     },
+//   },
+// };
 
 const AdManagerSection = () => {
   return (
