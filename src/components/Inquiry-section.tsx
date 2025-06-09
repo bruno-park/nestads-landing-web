@@ -3,37 +3,35 @@ import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Label from "@/components/ui/label";
 
 const InquirySection = () => {
   return (
-    <Section id="inquiry" className="bg-white py-20 text-center">
-      <Container>
-        <p className="text-lg font-medium text-black">
+    <Section id="inquiry" className="bg-white text-center">
+      <Container className="mb-[8.75rem] flex flex-col items-center justify-center">
+        <Label variant="summaryRegular" className="my-[6.25rem] block">
           NEST AD MANAGER는 전방위적인 지원을 통해
           <br />
-          <strong className="font-bold">고객사의 광고 사업 성공을 실현</strong>
+          <Label variant="summaryBold">고객사의 광고 사업 성공을 실현</Label>
           합니다.
-        </p>
+        </Label>
 
-        <div className="my-12">
+        <div className="relative mb-[1.875rem] h-[5.5rem] w-[32.1875rem]">
           <Image
             src="/images/logo.png"
             alt="NEST AD MANAGER 로고"
-            width={120}
-            height={120}
-            className="mx-auto"
+            fill
+            style={{ objectFit: "contain" }}
           />
         </div>
 
-        <h2 className="text-2xl font-extrabold text-black md:text-3xl">
-          NEST AD MANAGER,
-        </h2>
-        <p className="mt-2 text-xl font-bold text-black md:text-2xl">
+        <Label variant="title" className="mb-[2.5rem] block text-center">
+          NEST AD MANAGER, <br />
           광고 비즈니스의 새로운 장이 열립니다.
-        </p>
+        </Label>
 
-        <Button className="mt-10 rounded-full bg-black px-8 py-3 text-lg font-semibold text-white transition hover:bg-gray-800">
-          도입 문의
+        <Button className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-black">
+          <Label variant="bodyButton">도입 문의</Label>
         </Button>
       </Container>
     </Section>

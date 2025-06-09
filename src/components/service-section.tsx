@@ -11,6 +11,7 @@ import {
 import AdManagerContent from "@/components/ad-manager-content";
 import AdServerContent from "@/components/ad-server-content";
 import MarketingContent from "@/components/marketing-content";
+import Label from "@/components/ui/label";
 
 type serviceType = "MANAGER" | "SERVER" | "MARKETING";
 
@@ -38,52 +39,52 @@ const serviceData = [
 
 const ServiceSection = () => {
   return (
-    <Section id="service" className="bg-[#efefef] py-20">
+    <Section id="service" className="bg-section-2 py-[6.25rem]">
       <Container>
-        <div className="px-[140px]">
-          <div className="mb-16 text-center">
-            <p className="text-lg text-gray-800">
-              와이즈버즈는 국내 주요 서비스 기업의
-            </p>
-            <p className="text-2xl font-bold text-gray-900">
-              광고 시스템을 성공적으로 개발 및 정착시켜 왔습니다.
-            </p>
-          </div>
+        <div className="px-[8.75rem]">
+          <Label
+            variant={"summaryRegular"}
+            className="mb-[6.25rem] block text-center"
+          >
+            <p>와이즈버즈는 국내 주요 서비스 기업의</p>
+            <Label variant={"summaryBold"}>
+              광고 시스템을 성공적으로 개발 및 정착
+            </Label>
+            시켜 왔습니다.
+          </Label>
 
-          <div className="space-y-4 divide-y divide-black/70">
-            <Accordion type="single" collapsible className="w-full">
-              {serviceData.map((item, idx) => (
-                <AccordionItem
-                  key={idx}
-                  value={`item-${idx}`}
-                  className="w-full"
-                >
-                  <AccordionTrigger className="w-full px-4 py-6">
-                    <div className="flex w-full items-center justify-between gap-4">
-                      <h3 className="text-xl font-bold">{item.title}</h3>
-                      <div className="mr-2 flex items-center gap-2">
-                        {item.logos.map((logo, i) => (
-                          <div key={i} className="relative h-8 w-8">
-                            <Image
-                              src={logo}
-                              alt={`logo-${i}`}
-                              fill
-                              className="object-contain"
-                            />
-                          </div>
-                        ))}
-                      </div>
+          <Accordion type="single" collapsible className="w-full">
+            {serviceData.map((item, idx) => (
+              <AccordionItem
+                key={idx}
+                value={`item-${idx}`}
+                className="w-full first:border-t"
+              >
+                <AccordionTrigger className="w-full py-[1.8125rem] pl-[2.5rem]">
+                  <div className="flex w-full items-center justify-between gap-4">
+                    <Label variant={"subHeadline"}>{item.title}</Label>
+                    <div className="mr-2 flex items-center gap-[0.3125rem]">
+                      {item.logos.map((logo, i) => (
+                        <div key={i} className="relative h-8 w-8">
+                          <Image
+                            src={logo}
+                            alt={`logo-${i}`}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      ))}
                     </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-4 pb-6">
-                    {item.type === "MANAGER" && <AdManagerContent />}
-                    {item.type === "SERVER" && <AdServerContent />}
-                    {item.type === "MARKETING" && <MarketingContent />}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pb-[2.5rem]">
+                  {item.type === "MANAGER" && <AdManagerContent />}
+                  {item.type === "SERVER" && <AdServerContent />}
+                  {item.type === "MARKETING" && <MarketingContent />}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </Container>
     </Section>

@@ -6,12 +6,10 @@ import InquirySection from "@/components/Inquiry-section";
 const HomePage = () => {
   return (
     <>
-      {/*<Container>*/}
       <Hero />
       <ServiceSection />
       <AdManagerSection />
       <InquirySection />
-      {/*</Container>*/}
     </>
   );
 };
