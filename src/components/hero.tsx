@@ -3,6 +3,7 @@ import Image from "next/image";
 import Container from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import Text from "@/components/ui/text";
+import DownloadButtonWrapper from "./molecule/download-button-wrapper";
 
 const Hero = () => {
   return (
@@ -34,9 +35,11 @@ const Hero = () => {
                 고객사 맞춤 커스텀 기능으로 원하는 UI 및 광고 상품 형태에 맞춰
                 구축 가능합니다.
               </Text>
-              <Button className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-primary">
-                <Text variant="bodyButton">소개서 보기</Text>
-              </Button>
+              <DownloadButtonWrapper>
+                <Button className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-primary">
+                  <Text variant="bodyButton">소개서 보기</Text>
+                </Button>
+              </DownloadButtonWrapper>
             </div>
 
             <div className="relative h-[20.9375rem] w-[32.1875rem]">

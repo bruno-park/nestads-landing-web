@@ -3,11 +3,12 @@
 import Link from "next/link";
 import React from "react";
 
-import Container from "./layout/container";
+import Container from "../layout/container";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Text from "@/components/ui/text";
-import InquiryModal from "@/components/inquiry-modal";
+import InquiryModal from "@/components/modal/inquiry-modal";
+import DownloadButtonWrapper from "@/components/molecule/download-button-wrapper";
 
 const Header: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
         <nav className="mx-auto flex h-20 items-center justify-between bg-white px-10 shadow-md md:bg-transparent md:shadow-none">
           {/* Logo */}
           <Link
-            href="/"
+            href="/public"
             className="relative flex h-[22px] w-40 items-center gap-2"
           >
             <Image
@@ -31,9 +32,11 @@ const Header: React.FC = () => {
 
           {/* Desktop Menu */}
           <div className="flex hidden items-center gap-2 md:flex">
-            <Button variant="default" className="text w-[8.125rem]">
-              <Text variant="headButton">소개서 보기</Text>
-            </Button>
+            <DownloadButtonWrapper>
+              <Button variant="default" className="text w-[8.125rem]">
+                <Text variant="headButton">소개서 보기</Text>
+              </Button>
+            </DownloadButtonWrapper>
             <InquiryModal
               variant="outline"
               buttonClassName="w-[8.125rem]"

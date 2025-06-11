@@ -3,7 +3,7 @@ import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
 import Image from "next/image";
 import Text from "@/components/ui/text";
-import InquiryModal from "@/components/inquiry-modal";
+import InquiryModal from "@/components/modal/inquiry-modal";
 
 const InquirySection = () => {
   return (

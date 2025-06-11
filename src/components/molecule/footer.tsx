@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Text from "@/components/ui/text";
+import PrivacyModal from "@/components/modal/privacy-modal";
 
 const Footer = () => {
   return (
@@ -39,14 +40,7 @@ const Footer = () => {
 
         {/* 버튼 영역 */}
         <div className="flex gap-2.5 self-end py-2">
-          <Link href="/privacy-policy">
-            <Text
-              variant="footerButton"
-              className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black"
-            >
-              개인정보처리방침
-            </Text>
-          </Link>
+          <PrivacyModal />
           <Link href="https://www.wisebirds.ai" target="_blank">
             <Text
               variant="footerButton"

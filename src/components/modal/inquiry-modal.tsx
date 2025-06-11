@@ -1,15 +1,5 @@
 "use client";
 
-import { AlertDialog } from "@radix-ui/react-alert-dialog";
-import {
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 import Text from "@/components/ui/text";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
@@ -17,6 +7,15 @@ import { X } from "lucide-react";
 import LabelInput from "@/components/molecule/label-input";
 import { Button } from "@/components/ui/button";
 import React, { ReactNode, useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const InquiryModal = ({
   buttonClassName,
@@ -30,8 +29,8 @@ const InquiryModal = ({
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <AlertDialog open={open}>
-      <AlertDialogTrigger asChild>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
         <Button
           variant={variant}
           className={buttonClassName}
@@ -39,10 +38,10 @@ const InquiryModal = ({
         >
           {buttonText}
         </Button>
-      </AlertDialogTrigger>
-      <AlertDialogContent className="p-5 pb-10">
-        <AlertDialogHeader className="px-[1.875rem]">
-          <AlertDialogTitle className="relative">
+      </DialogTrigger>
+      <DialogContent className="p-5 pb-10">
+        <DialogHeader className="px-[1.875rem]">
+          <DialogTitle className="relative">
             <div className="mb-[1.25rem] mt-[2.8125rem] flex justify-between">
               <span className="font-stretch-[100%] text-[1.5625rem] font-semibold leading-[2.375rem] tracking-[-0.02em]">
                 Nest Ads Manager 문의 신청
@@ -52,8 +51,8 @@ const InquiryModal = ({
                 onClick={() => setOpen(false)}
               />
             </div>
-          </AlertDialogTitle>
-          <AlertDialogDescription>
+          </DialogTitle>
+          <DialogDescription>
             <div className="flex w-full flex-col">
               <span className="font-regular font-stretch-[100%] mb-10 text-[1rem] leading-[1.625rem] tracking-[-0.02em]">
                 서비스 이용을 원하시는 고객사께서는 아래 정보를 남겨 주시면
@@ -108,20 +107,20 @@ const InquiryModal = ({
                 </div>
               </div>
             </div>
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
+          </DialogDescription>
+        </DialogHeader>
+        <DialogFooter>
           <div className="mt-10 flex w-full items-center justify-center">
-            <AlertDialogAction
+            <Button
               className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-black"
               onClick={() => setOpen(false)}
             >
               신청하기
-            </AlertDialogAction>
+            </Button>
           </div>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 };
 
