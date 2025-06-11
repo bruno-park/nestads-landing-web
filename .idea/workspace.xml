@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/download-button-wrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inquiry-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: url 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +124,7 @@
       <workItem from="1749434282504" duration="18370000" />
       <workItem from="1749611636858" duration="2238000" />
       <workItem from="1749623073663" duration="5115000" />
-      <workItem from="1749637990556" duration="9078000" />
+      <workItem from="1749637990556" duration="9307000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -210,7 +198,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749643488527</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix">
+      <option name="closed" value="true" />
+      <created>1749647124396</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749647124396</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: dialog 추가">
+      <option name="closed" value="true" />
+      <created>1749647215338</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749647215338</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: url 수정">
+      <option name="closed" value="true" />
+      <created>1749647259236</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749647259236</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +242,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: layout 정의" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="fix: dialog 추가" />
+    <MESSAGE value="fix: url 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: url 수정" />
   </component>
 </project>
