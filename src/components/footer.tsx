@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Label from "@/components/ui/label";
+import Text from "@/components/ui/text";
 
 const Footer = () => {
   return (
@@ -17,43 +17,43 @@ const Footer = () => {
           />
 
           <div className="whitespace-pre-line py-2 text-sm leading-relaxed text-white">
-            <Label variant="footerText">주식회사 와이즈버즈</Label>
+            <Text variant="footerText">주식회사 와이즈버즈</Text>
             <br />
-            <Label variant="footerText">
+            <Text variant="footerText">
               경기도 성남시 수정구 금토로 69 다우디지털스퀘어 5층
-            </Label>
+            </Text>
           </div>
         </div>
 
         {/* 연락처 */}
         <div className="self-end py-2 text-sm leading-relaxed text-white">
-          <Label variant="footerText">
+          <Text variant="footerText">
             Tel. 02-538-8897 / Email. sales@nestads.com
-          </Label>
+          </Text>
           <br />
-          <Label variant="footerText">
+          <Text variant="footerText">
             대표자명 : 김종원, 최호준&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             사업자등록번호 : 703-86-00909
-          </Label>
+          </Text>
         </div>
 
         {/* 버튼 영역 */}
         <div className="flex gap-2.5 self-end py-2">
           <Link href="/privacy-policy">
-            <Label
+            <Text
               variant="footerButton"
               className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black"
             >
               개인정보처리방침
-            </Label>
+            </Text>
           </Link>
           <Link href="https://www.wisebirds.ai" target="_blank">
-            <Label
+            <Text
               variant="footerButton"
               className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black"
             >
               Wisebirds
-            </Label>
+            </Text>
           </Link>
         </div>
       </div>

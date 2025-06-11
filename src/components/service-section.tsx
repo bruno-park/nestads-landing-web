@@ -11,7 +11,7 @@ import {
 import AdManagerContent from "@/components/ad-manager-content";
 import AdServerContent from "@/components/ad-server-content";
 import MarketingContent from "@/components/marketing-content";
-import Label from "@/components/ui/label";
+import Text from "@/components/ui/text";
 
 type serviceType = "MANAGER" | "SERVER" | "MARKETING";
 
@@ -42,16 +42,16 @@ const ServiceSection = () => {
     <Section id="service" className="bg-section-2 py-[6.25rem]">
       <Container>
         <div className="px-[8.75rem]">
-          <Label
+          <Text
             variant={"summaryRegular"}
             className="mb-[6.25rem] block text-center"
           >
             <p>와이즈버즈는 국내 주요 서비스 기업의</p>
-            <Label variant={"summaryBold"}>
+            <Text variant={"summaryBold"}>
               광고 시스템을 성공적으로 개발 및 정착
-            </Label>
+            </Text>
             시켜 왔습니다.
-          </Label>
+          </Text>
 
           <Accordion type="single" collapsible className="w-full">
             {serviceData.map((item, idx) => (
@@ -62,7 +62,7 @@ const ServiceSection = () => {
               >
                 <AccordionTrigger className="w-full py-[1.8125rem] pl-[2.5rem]">
                   <div className="flex w-full items-center justify-between gap-4">
-                    <Label variant={"subHeadline"}>{item.title}</Label>
+                    <Text variant={"subHeadline"}>{item.title}</Text>
                     <div className="mr-2 flex items-center gap-[0.3125rem]">
                       {item.logos.map((logo, i) => (
                         <div key={i} className="relative h-8 w-8">

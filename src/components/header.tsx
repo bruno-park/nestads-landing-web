@@ -6,11 +6,12 @@ import React from "react";
 import Container from "./layout/container";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Label from "@/components/ui/label";
+import Text from "@/components/ui/text";
+import InquiryModal from "@/components/inquiry-modal";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 mx-auto h-20 w-full bg-transparent bg-white md:absolute">
+    <header className="fixed left-0 right-0 top-0 z-50 mx-auto h-20 w-full bg-transparent bg-white">
       <Container className="!px-0">
         <nav className="mx-auto flex h-20 items-center justify-between bg-white px-10 shadow-md md:bg-transparent md:shadow-none">
           {/* Logo */}
@@ -31,11 +32,13 @@ const Header: React.FC = () => {
           {/* Desktop Menu */}
           <div className="flex hidden items-center gap-2 md:flex">
             <Button variant="default" className="text w-[8.125rem]">
-              <Label variant="headButton">소개서 보기</Label>
+              <Text variant="headButton">소개서 보기</Text>
             </Button>
-            <Button variant="outline" className="w-[8.125rem]">
-              <Label variant="headButton">도입 문의</Label>
-            </Button>
+            <InquiryModal
+              variant="outline"
+              buttonClassName="w-[8.125rem]"
+              buttonText={<Text variant="headButton">도입 문의</Text>}
+            />
           </div>
         </nav>
       </Container>

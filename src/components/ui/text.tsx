@@ -10,7 +10,8 @@ type LabelVariant =
   | "summaryBold"
   | "subHeadline"
   | "footerText"
-  | "footerButton";
+  | "footerButton"
+  | "privacyText";
 
 interface LabelProps {
   variant: LabelVariant;
@@ -31,9 +32,11 @@ const typographyStyles: Record<LabelVariant, string> = {
   subHeadline: "font-bold text-[1.375rem] tracking-[-0.02em]",
   footerText: "font-normal text-[0.9375rem] leading-[1.625rem] tracking-[0em]",
   footerButton: "font-normal text-[0.875rem] tracking-[0em]",
+  privacyText:
+    "block text-black font-stretch-[100%] text-[0.875rem] font-normal leading-[1.375rem] tracking-[-0.02em]",
 };
 
-export default function Label({
+export default function Text({
   variant,
   children,
   className = "",
@@ -42,3 +45,4 @@ export default function Label({
 
   return <span className={`${baseStyle} ${className}`}>{children}</span>;
 }
+// <Text variant="bodyButton">도입 문의</Text>
