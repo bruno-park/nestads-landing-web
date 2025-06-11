@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/components/inquiry-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/label-input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-server-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-server-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/marketing-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/marketing-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easycode/codebase-v2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/NestAds_SalesKit_2025ver..pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,29 +52,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/public/images" />
@@ -144,7 +128,7 @@
       <workItem from="1749434282504" duration="18370000" />
       <workItem from="1749611636858" duration="2238000" />
       <workItem from="1749623073663" duration="5115000" />
-      <workItem from="1749637990556" duration="5131000" />
+      <workItem from="1749637990556" duration="5480000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -202,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749461586030</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="wip">
+      <option name="closed" value="true" />
+      <created>1749643138841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749643138841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
