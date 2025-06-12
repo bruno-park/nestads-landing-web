@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: url 수정">
-      <change afterPath="$PROJECT_DIR$/env.local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/inquiry-action.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Bold.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Medium.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-SemiBold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-SemiBold.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/label-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/label-input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +127,7 @@
       <workItem from="1749611636858" duration="2238000" />
       <workItem from="1749623073663" duration="5115000" />
       <workItem from="1749637990556" duration="9307000" />
-      <workItem from="1749689733285" duration="16405000" />
+      <workItem from="1749689733285" duration="17766000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -241,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749647259236</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="wip">
+      <option name="closed" value="true" />
+      <created>1749715465079</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749715465079</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,10 +252,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: layout 정의" />
-    <MESSAGE value="wip" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix: dialog 추가" />
     <MESSAGE value="fix: url 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: url 수정" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
 </project>
