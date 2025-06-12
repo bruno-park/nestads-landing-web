@@ -1,6 +1,15 @@
 "use server";
 
 import nodemailer from "nodemailer";
+import { SendRawEmailCommand, SESClient } from "@aws-sdk/client-ses";
+
+const ses = new SESClient({
+  region: "ap-northeast-2",
+  credentials: {
+    accessKeyId: "",
+    secretAccessKey: "",
+  },
+});
 
 export interface InquiryForm {
   name: string;
@@ -114,15 +123,12 @@ export async function sendInquiryMail(data: InquiryForm) {
   `;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: "bruno.park@wisebirds.com",
-      pass: "tzocavmsjmamnbpe",
-    },
+    SES: { ses, aws: { SendRawEmailCommand } },
   });
 
   const mailOptions = {
-    to: "qktmzlf@naver.com",
+    from: "noreply-dev@nestads.com",
+    to: "bruno.park@wisebirds.com",
     subject: "[Nest Ads Manager 문의] 신규 문의가 도착했습니다",
     html: htmlContent,
     replyTo: data?.email,
@@ -130,6 +136,7 @@ export async function sendInquiryMail(data: InquiryForm) {
 
   try {
     await transporter.sendMail(mailOptions);
+    return { result: true };
   } catch (error) {
     console.error("Email send error:", error);
     throw new Error("문의 전송 중 오류가 발생했습니다.");

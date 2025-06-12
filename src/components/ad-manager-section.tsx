@@ -5,47 +5,26 @@ import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
 import Image from "next/image";
 import Text from "@/components/ui/text";
+import { motion } from "framer-motion";
 
-// const containerVariants: Variants = {
-//   offscreen: {
-//     opacity: 0,
-//     y: 100,
-//   },
-//   onscreen: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       type: "spring",
-//       bounce: 0.2,
-//       duration: 0.9,
-//       delayChildren: 0.2,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
-
-// export const childVariants = {
-//   offscreen: {
-//     opacity: 0,
-//     x: -50,
-//   },
-//   onscreen: {
-//     opacity: 1,
-//     x: 0,
-//     transition: {
-//       type: "spring",
-//       bounce: 0.2,
-//       duration: 1,
-//     },
-//   },
-// };
+const fadeUp = {
+  initial: { opacity: 0, y: 80 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+};
 
 const AdManagerSection = () => {
   return (
     <Section id="ad-manager-service" className="bg-section-3 py-[6.25rem]">
       <Container>
         <div className="flex flex-col gap-10">
-          <div className="px-[8.75rem]">
+          <motion.div
+            initial={fadeUp.initial}
+            whileInView={fadeUp.animate}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={fadeUp.transition}
+            className="px-[8.75rem]"
+          >
             <Text variant={"summaryRegular"} className="block text-center">
               <p>국내 최고 수준의 서비스들이</p>
               <Text variant={"summaryBold"}>
@@ -59,7 +38,13 @@ const AdManagerSection = () => {
             </div>
 
             {/* 상단 SDK 설명 영역 */}
-            <div className="mx-auto flex h-[25.625rem] w-full items-center justify-between">
+            <motion.div
+              initial={fadeUp.initial}
+              whileInView={fadeUp.animate}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ ...fadeUp.transition, delay: 0.2 }}
+              className="mx-auto flex h-[25.625rem] w-full items-center justify-between"
+            >
               <div className="max-w-lg">
                 <Text variant="title" className="!mb-[1.875rem] block">
                   하나의 SDK로 광고 사업에 <br />
@@ -75,8 +60,6 @@ const AdManagerSection = () => {
                   광고 수익을 극대화할 수 있습니다.
                 </Text>
               </div>
-
-              {/* 이미지 영역 */}
               <div className="relative h-full w-[32.1875rem]">
                 <Image
                   src="/images/nest-ad-manager/ad-manager-1.png"
@@ -85,12 +68,16 @@ const AdManagerSection = () => {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* 하단 과금 방식 영역 */}
-
-            <div className="mx-auto flex h-[25.625rem] w-full items-center justify-between">
-              {/* 왼쪽: 과금 방식 선택 예시 */}
+            <motion.div
+              initial={fadeUp.initial}
+              whileInView={fadeUp.animate}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ ...fadeUp.transition, delay: 0.2 }}
+              className="mx-auto flex h-[25.625rem] w-full items-center justify-between"
+            >
               <div className="relative h-full w-[32.1875rem]">
                 <Image
                   src="/images/nest-ad-manager/ad-manager-2.png"
@@ -99,8 +86,6 @@ const AdManagerSection = () => {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-
-              {/* 텍스트 영역 */}
               <div className="max-w-lg">
                 <Text variant="title" className="!mb-8 block">
                   모든 과금 방식을 지원합니다.
@@ -114,11 +99,16 @@ const AdManagerSection = () => {
                   광고 사업을 성공적으로 이끌 수 있습니다.
                 </Text>
               </div>
-            </div>
+            </motion.div>
 
-            {/* 상단 SDK 설명 영역 */}
-            <div className="mx-auto flex h-[25.625rem] w-full items-center justify-between">
-              {/* 텍스트 영역 */}
+            {/* 맞춤형 광고 상품 영역 */}
+            <motion.div
+              initial={fadeUp.initial}
+              whileInView={fadeUp.animate}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ ...fadeUp.transition, delay: 0.2 }}
+              className="mx-auto flex h-[25.625rem] w-full items-center justify-between"
+            >
               <div className="max-w-lg">
                 <Text variant="title" className="!mb-8 block">
                   고객사 맞춤형 광고 상품을 <br />
@@ -133,8 +123,6 @@ const AdManagerSection = () => {
                   고도화 등의 커스텀 개발도 가능합니다.
                 </Text>
               </div>
-
-              {/* 이미지 영역 */}
               <div className="relative h-full w-[32.1875rem]">
                 <Image
                   src="/images/nest-ad-manager/ad-manager-3.png"
@@ -143,11 +131,16 @@ const AdManagerSection = () => {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-            </div>
+            </motion.div>
 
-            {/* 하단 과금 방식 영역 */}
-            <div className="mx-auto flex h-[25.625rem] w-full items-center justify-between">
-              {/* 왼쪽: 과금 방식 선택 예시 */}
+            {/* 광고 사업 지원 영역 */}
+            <motion.div
+              initial={fadeUp.initial}
+              whileInView={fadeUp.animate}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ ...fadeUp.transition, delay: 0.2 }}
+              className="mx-auto flex h-[25.625rem] w-full items-center justify-between"
+            >
               <div className="relative h-full w-[32.1875rem]">
                 <Image
                   src="/images/nest-ad-manager/ad-manager-4.png"
@@ -156,8 +149,6 @@ const AdManagerSection = () => {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-
-              {/* 텍스트 영역 */}
               <div className="max-w-lg">
                 <Text variant="title" className="!mb-[1.875rem] block">
                   와이즈버즈에서
@@ -179,8 +170,8 @@ const AdManagerSection = () => {
                   지원도 함께 진행합니다.
                 </Text>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </Container>
     </Section>

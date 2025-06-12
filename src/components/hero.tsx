@@ -10,7 +10,7 @@ const Hero = () => {
     <section id="hero" className="relative mt-20 bg-white">
       {/* Background Image */}
       <Container>
-        <div className="relative h-[670px]">
+        <div className="relative h-[41.875rem]">
           <Image
             src="/images/main/hero-bg.png" // 업로드한 이미지 경로에 맞게 수정
             alt="background"

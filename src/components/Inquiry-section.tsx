@@ -16,12 +16,14 @@ const InquirySection = () => {
           합니다.
         </Text>
 
-        <div className="relative mb-[1.875rem] h-[5.5rem] w-[32.1875rem]">
+        <div className="relative mb-[1.875rem] h-[5.5rem] w-[8.75rem]">
           <Image
             src="/images/logo.png"
             alt="NEST AD MANAGER 로고"
             fill
-            style={{ objectFit: "contain" }}
+            style={{
+              objectFit: "fill",
+            }}
           />
         </div>
 

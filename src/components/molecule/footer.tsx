@@ -28,14 +28,15 @@ const Footer = () => {
 
         {/* 연락처 */}
         <div className="self-end py-2 text-sm leading-relaxed text-white">
-          <Text variant="footerText">
-            Tel. 02-538-8897 / Email. sales@nestads.com
-          </Text>
-          <br />
-          <Text variant="footerText">
-            대표자명 : 김종원, 최호준&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            사업자등록번호 : 703-86-00909
-          </Text>
+          <div className="flex gap-2">
+            <Text variant="footerText">Tel. 02-538-8897</Text>|
+            <Text variant="footerText">Email. sales@nestads.com</Text>
+          </div>
+
+          <div className="flex gap-2">
+            <Text variant="footerText">대표자명 : 김종원, 최호준</Text> |
+            <Text variant="footerText">사업자등록번호 : 703-86-00909</Text>
+          </div>
         </div>
 
         {/* 버튼 영역 */}
