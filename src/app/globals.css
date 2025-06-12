@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/public/fonts/Pretendard-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/public/fonts/Pretendard-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/public/fonts/Pretendard-SemiBold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/public/fonts/Pretendard-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 :root {
   --primary: #FED835;
   --secondary: #304fff;
@@ -49,8 +16,7 @@ html {
 }
 
 body {
-  @apply text-lg;
-  font-family: "Source Sans 3", sans-serif;
+  @apply text-lg ;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -61,17 +27,6 @@ body {
   }
 }
 
-.manrope {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
 
 #logos svg {
   @apply w-fit h-10 sm:h-12;

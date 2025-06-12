@@ -1,15 +1,37 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Source_Sans_3, Manrope } from "next/font/google";
 
 import Header from "@/components/molecule/header";
 import Footer from "@/components/molecule/footer";
 import { siteDetails } from "@/data/siteDetails";
-
+import localFont from "next/font/local";
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ["latin"] });
-const sourceSans = Source_Sans_3({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: [
+    {
+      path: "./fonts/Pretendard-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Pretendard-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Pretendard-SemiBold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Pretendard-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
@@ -42,10 +64,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${manrope.className} ${sourceSans.className} antialiased`}
-      >
+    <html lang="en" className={pretendard.className}>
+      <body>
         {siteDetails.googleAnalyticsId && (
           <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />
         )}

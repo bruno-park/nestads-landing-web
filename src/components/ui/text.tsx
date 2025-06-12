@@ -45,4 +45,3 @@ export default function Text({
 
   return <span className={`${baseStyle} ${className}`}>{children}</span>;
 }
-// <Text variant="bodyButton">도입 문의</Text>

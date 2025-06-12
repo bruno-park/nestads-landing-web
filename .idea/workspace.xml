@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: url 수정" />
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: url 수정">
+      <change afterPath="$PROJECT_DIR$/env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/inquiry-action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Bold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Medium.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Pretendard-SemiBold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fonts/Pretendard-SemiBold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/label-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/label-input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,27 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "git-widget-placeholder": "main",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -78,11 +96,11 @@
       <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/fonts" />
       <recent name="$PROJECT_DIR$/src/components/modal" />
       <recent name="$PROJECT_DIR$/src/components/molecule" />
       <recent name="$PROJECT_DIR$/src/components/layout" />
       <recent name="$PROJECT_DIR$/public/images/nest-ad-manager" />
-      <recent name="$PROJECT_DIR$/public/images/marketing" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -125,6 +143,7 @@
       <workItem from="1749611636858" duration="2238000" />
       <workItem from="1749623073663" duration="5115000" />
       <workItem from="1749637990556" duration="9307000" />
+      <workItem from="1749689733285" duration="16405000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />

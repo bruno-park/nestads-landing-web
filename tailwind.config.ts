@@ -9,9 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Pretendard", "sans-serif"],
-      },
       fontSize: {
         "head-btn": ["16px", { lineHeight: "1", letterSpacing: "-0.05em" }], // 장평 95%
         title: ["32px", { lineHeight: "43px", letterSpacing: "-0.02em" }], // 자간 -20, 장평 98%
