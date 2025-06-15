@@ -47,7 +47,7 @@ const Footer = () => {
             <Button
               variant="outline"
               size="footer"
-              className="border-footer-gray bg-transparent"
+              className="border-footer-gray bg-transparent hover:border-transparent hover:bg-white hover:text-black"
             >
               <Text variant="footerButton">Wisebirds</Text>
             </Button>

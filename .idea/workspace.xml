@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: siteUrl 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +25,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1748490417" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1749996670" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1748490390" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1749996655" />
                   </RecentBranch>
                 </list>
               </option>

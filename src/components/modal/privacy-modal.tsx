@@ -23,7 +23,7 @@ const PrivacyModal = () => {
           variant={"outline"}
           size="footer"
           onClick={() => setOpen(true)}
-          className="border-footer-gray bg-transparent"
+          className="border-footer-gray bg-transparent hover:border-transparent hover:bg-white hover:text-black"
         >
           <Text variant="footerButton">개인정보처리방침</Text>
         </Button>
