@@ -43,18 +43,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/header-logo.png",
         width: 1200,
         height: 675,
         alt: siteMeta.siteName,
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteMeta.metadata.title,
-    description: siteMeta.metadata.description,
-    images: ["/images/twitter-image.jpg"],
   },
 };
 
