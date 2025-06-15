@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/public/images/ad-server/band.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/ad-server/soop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/marketing/onestore.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/marketing/uplus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/blind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/dailyshot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/saramin.svg" afterDir="false" />
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/actions/inquiry-action.ts&#10;#&#9;src/components/modal/inquiry-modal.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ad-server/band.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ad-server/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ad-server/dashboard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ad-server/meta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ad-server/placement.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ad-server/placement.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/marketing/onestore-ad-center.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/marketing/onestore-ad-center.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/marketing/onestore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/marketing/uplus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/ad-manager-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/ad-manager-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/blind.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/dailyshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/dashboard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/placement.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/nest-ad-manager/placement.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/nest-ad-manager/saramin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/inquiry-action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/inquiry-action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,27 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "git-widget-placeholder": "main",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/public/images/nest-ad-manager",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/public/images/nest-ad-manager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/wisebirds/WebstormProjects/landing-web/nestads-landing-web/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/nest-ad-manager" />

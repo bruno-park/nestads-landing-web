@@ -26,7 +26,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { InquiryForm, sendInquiryMail } from "@/actions/inquiry-action";
+import { InquiryForm } from "@/actions/inquiry-action";
 import Image from "next/image";
 
 const schema = z.object({
