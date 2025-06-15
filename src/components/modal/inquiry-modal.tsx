@@ -86,7 +86,16 @@ const InquiryModal = ({
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+      open={open}
+      onOpenChange={(open) => {
+        if (!open) {
+          handleModalClose();
+        } else {
+          setOpen(true);
+        }
+      }}
+    >
       <DialogTrigger asChild>
         <Button
           variant={variant}
