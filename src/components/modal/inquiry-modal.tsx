@@ -67,6 +67,7 @@ const InquiryModal = ({
 
   const handleSubmit = async (data: InquiryForm) => {
     try {
+      console.log(data);
       //배포 후 주석 해제
       // const { result } = await sendInquiryMail(data);
       // if (result) {
