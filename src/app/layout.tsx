@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/header-logo.png",
+        url: siteMeta.siteLogo,
         width: 1200,
         height: 675,
         alt: siteMeta.siteName,

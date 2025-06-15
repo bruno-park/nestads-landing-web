@@ -8,6 +8,6 @@ export const siteMeta = {
   },
   language: "ko-kr",
   locale: "ko-KR",
-  siteLogo: `${process.env.BASE_PATH || ""}/images/logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ""}/images/header-logo.png`,
   googleAnalyticsId: "",
 };
