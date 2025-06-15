@@ -7,7 +7,7 @@ const AdManagerContent = () => {
       <ul className="mx-[2.5rem] list-disc pl-5">
         <li>
           <Text variant="bodyRegular">
-            블라인드는 NEST AD MANAGER를 통해 운영 대시보드 구축 및 신규 지면
+            블라인드는 NEST ADS MANAGER를 통해 운영 대시보드 구축 및 신규 지면
             (동영상 피드 광고, 알림 목록 배너 등) 확장을 진행했습니다.
           </Text>
         </li>

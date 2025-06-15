@@ -262,7 +262,7 @@ const InquiryModal = ({
                       <div className="rounded-xl border bg-gray-100 p-6">
                         <div className="flex flex-col gap-4">
                           <Text variant="privacyText">
-                            NEST AD MANAGER 서비스 가입 문의 등 고객 상담을
+                            NEST ADS MANAGER 서비스 가입 문의 등 고객 상담을
                             위하여 아래와 같이 개인정보를 수집·이용하고자
                             합니다.
                             <br />

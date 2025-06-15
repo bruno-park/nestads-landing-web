@@ -19,7 +19,7 @@ type serviceType = "MANAGER" | "SERVER" | "MARKETING";
 
 const serviceData = [
   {
-    title: "NEST AD MANAGER",
+    title: "NEST ADS MANAGER",
     type: "MANAGER" as serviceType,
     logos: [
       "/images/nest-ad-manager/blind.svg",

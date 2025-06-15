@@ -28,7 +28,7 @@ const Hero = () => {
               </Text>
               <Text variant={"bodyRegular"} className="mb-10 block w-[25rem]">
                 <Text variant={"bodySemiBold"}>
-                  NEST AD MANAGER는 SDK 및 API 기반의 광고 서버 및 운영 플랫폼
+                  NEST ADS MANAGER는 SDK 및 API 기반의 광고 서버 및 운영 플랫폼
                   서비스입니다.
                 </Text>
                 통합 SDK로 실제 연동부터 광고 송출까지 4주 이내 개발 가능하며,

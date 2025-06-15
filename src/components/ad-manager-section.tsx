@@ -52,7 +52,7 @@ const AdManagerSection = () => {
                 </Text>
                 <Text variant={"bodyRegular"} className="block w-[25rem]">
                   <Text variant={"bodySemiBold"} className="mb-2 block">
-                    NEST AD MANAGER SDK 하나로 직접 판매 광고와 <br />
+                    NEST ADS MANAGER SDK 하나로 직접 판매 광고와 <br />
                     다양한 DSP, 네트워크 광고 등을 통합 지원합니다.
                   </Text>
                   고객사는 광고 사업에 필수적인 플랫폼들을 <br />
@@ -160,7 +160,7 @@ const AdManagerSection = () => {
                   문의 대응,매체 설명회까지
                   <Text variant={"bodySemiBold"}>
                     {" "}
-                    NEST AD MANAGER 전담팀에서 광고 사업을 총괄
+                    NEST ADS MANAGER 전담팀에서 광고 사업을 총괄
                   </Text>
                   해 드립니다.
                 </Text>

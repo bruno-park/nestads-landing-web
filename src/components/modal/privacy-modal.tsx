@@ -21,7 +21,7 @@ const PrivacyModal = () => {
         <Button
           variant={"outline"}
           onClick={() => setOpen(true)}
-          className="h-[1.875rem] border-white bg-transparent text-[0.875rem] font-normal tracking-[0em]"
+          className="h-[1.875rem] border-footer-gray bg-transparent text-[0.875rem] font-normal tracking-[0em]"
         >
           개인정보처리방침
         </Button>
@@ -44,7 +44,7 @@ const PrivacyModal = () => {
               <Label className="text-[0.9375rem] font-normal leading-[1.625rem] tracking-[-0.0125em]">
                 ▣ 개인정보의 수집목적 및 이용목적 <br />
                 와이즈버즈가 고객으로부터 개인정보를 수집하는 이유와 개인정보의
-                사용목적은 NEST AD MANAGER 사이트(http://nestads.com)를 통해
+                사용목적은 NEST ADS MANAGER 사이트(http://nestads.com)를 통해
                 접수되는 고객 문의사항에 응대하기 위한 것 입니다. <br />
                 와이즈버즈는 고객이 전달하신 각종 문의사항에 대해 신속하고
                 정확한 답변을 드리기 위해 개인정보를 요구하고 있습니다.
