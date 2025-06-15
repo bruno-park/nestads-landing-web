@@ -44,7 +44,7 @@ const ServiceSection = () => {
   return (
     <Section id="service" className="bg-gray-light py-[6.25rem]">
       <Container>
-        <div className="px-[8.75rem]">
+        <div className="px-[4.6875rem] md:px-[8.75rem]">
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -8,7 +8,7 @@ const HomePage = () => {
     <>
       <Hero />
       <ServiceSection />
-      <AdManagerSection />
+      {/*<AdManagerSection />*/}
       <InquirySection />
     </>
   );

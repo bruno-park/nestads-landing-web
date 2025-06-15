@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 mx-auto h-20 w-full bg-transparent bg-white">
       <Container className="!px-0">
-        <nav className="mx-auto flex h-20 items-center justify-between bg-white px-10 shadow-md md:bg-transparent md:shadow-none">
+        <nav className="mx-auto flex h-[7.5rem] items-center justify-between bg-white px-10 md:h-20">
           {/* Logo */}
           <Link
             href="/public"
@@ -32,6 +32,20 @@ const Header: React.FC = () => {
 
           {/* Desktop Menu */}
           <div className="flex hidden items-center gap-2 md:flex">
+            <DownloadButtonWrapper>
+              <Button variant="default" size="header">
+                <Text variant="headButton">소개서 보기</Text>
+              </Button>
+            </DownloadButtonWrapper>
+            <InquiryModal
+              variant="outline"
+              buttonClassName="w-[8.125rem]"
+              buttonText={<Text variant="headButton">도입 문의</Text>}
+            />
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="flex items-center gap-2 md:hidden">
             <DownloadButtonWrapper>
               <Button variant="default" size="header">
                 <Text variant="headButton">소개서 보기</Text>

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: siteUrl 변경">
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: opengraph size 조절">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/text.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +138,7 @@
       <workItem from="1749637990556" duration="9307000" />
       <workItem from="1749689733285" duration="24584000" />
       <workItem from="1749962292495" duration="5929000" />
+      <workItem from="1749988982308" duration="5409000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -331,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749974861499</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix: opengraph size 조절">
+      <option name="closed" value="true" />
+      <created>1749975267038</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749975267038</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix: opengraph size 조절">
+      <option name="closed" value="true" />
+      <created>1749975507896</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749975507896</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +387,19 @@
     <MESSAGE value="style: 원복" />
     <MESSAGE value="style: hover 제거" />
     <MESSAGE value="fix: siteUrl 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: siteUrl 변경" />
+    <MESSAGE value="fix: opengraph size 조절" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: opengraph size 조절" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/hero.tsx</url>
+          <line>62</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -7,7 +7,7 @@ interface Props {
 
 const Section = ({ children, id, className }: PropsWithChildren<Props>) => {
   return (
-    <section className={`w-full ${className}`} id={id}>
+    <section className={`w-screen md:w-full ${className}`} id={id}>
       {children}
     </section>
   );

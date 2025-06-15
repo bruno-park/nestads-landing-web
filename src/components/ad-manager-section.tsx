@@ -43,7 +43,7 @@ const AdManagerSection = () => {
               whileInView={fadeUp.animate}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ ...fadeUp.transition, delay: 0.2 }}
-              className="mx-auto flex h-[25.625rem] w-full items-center justify-between"
+              className="mx-auto flex h-[25.625rem] w-full flex-col items-center justify-between md:flex-row"
             >
               <div className="max-w-lg">
                 <Text variant="title" className="!mb-[1.875rem] block">
