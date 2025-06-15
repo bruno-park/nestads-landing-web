@@ -36,6 +36,9 @@ const pretendard = localFont({
 export const metadata: Metadata = {
   title: siteMeta.metadata.title,
   description: siteMeta.metadata.description,
+  icons: {
+    icon: `${process.env.BASE_PATH || ""}/images/favicon.svg`,
+  },
   openGraph: {
     title: siteMeta.metadata.title,
     description: siteMeta.metadata.description,

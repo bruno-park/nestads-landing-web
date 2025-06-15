@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Section from "@/components/layout/section";
 import Container from "@/components/layout/container";
@@ -80,7 +81,7 @@ const ServiceSection = () => {
                       <Text variant={"subHeadline"}>{item.title}</Text>
                       <div className="mr-2 flex items-center gap-[0.3125rem]">
                         {item.logos.map((logo, i) => (
-                          <div key={i} className="relative h-8 w-8 rounded-xl">
+                          <div key={i} className="relative h-8 w-8">
                             <Image
                               src={logo}
                               alt={`logo-${i}`}
