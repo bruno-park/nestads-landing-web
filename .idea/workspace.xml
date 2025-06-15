@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="style: 원복">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="style: hover 제거" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749974412785</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="style: hover 제거">
+      <option name="closed" value="true" />
+      <created>1749974546971</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749974546971</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +349,7 @@
     <MESSAGE value="fix: 파일 정리" />
     <MESSAGE value="fix: meta 처리" />
     <MESSAGE value="style: 원복" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: 원복" />
+    <MESSAGE value="style: hover 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: hover 제거" />
   </component>
 </project>

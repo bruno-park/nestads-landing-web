@@ -1,6 +1,6 @@
 export const siteMeta = {
   siteName: "Nest Ads Manager",
-  siteUrl: "https://finwise-omega.vercel.app/",
+  siteUrl: "https://nestads-landing-web.vercel.app/",
   metadata: {
     title: "Nest Ads Manager - 광고 운영을 위한 올인원 솔루션",
     description:
