@@ -11,6 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import Text from "@/components/ui/text";
 
 const PrivacyModal = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -20,10 +21,11 @@ const PrivacyModal = () => {
       <DialogTrigger asChild>
         <Button
           variant={"outline"}
+          size="footer"
           onClick={() => setOpen(true)}
-          className="h-[1.875rem] border-footer-gray bg-transparent text-[0.875rem] font-normal tracking-[0em]"
+          className="border-footer-gray bg-transparent"
         >
-          개인정보처리방침
+          <Text variant="footerButton">개인정보처리방침</Text>
         </Button>
       </DialogTrigger>
       <DialogContent className="p-5">

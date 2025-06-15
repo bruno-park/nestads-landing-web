@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="wip">
+    <list default="true" id="aa66128c-e495-4e21-ace1-74092e9e6ea0" name="Changes" comment="fix: NEST AD -&gt; NEST ADS 문구 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ad-manager-section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/inquiry-modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/privacy-modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/service-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/benefits.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/cta.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/faq.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/footer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/hero.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/menuItems.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/pricing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/siteDetails.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/site-meta.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/stats.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/testimonials.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749968742048</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix: NEST AD -&gt; NEST ADS 문구 수정">
+      <option name="closed" value="true" />
+      <created>1749969625185</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749969625185</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +326,7 @@
     <MESSAGE value="fix: url 수정" />
     <MESSAGE value="fix: pnpm install" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="fix: NEST AD -&gt; NEST ADS 문구 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: NEST AD -&gt; NEST ADS 문구 수정" />
   </component>
 </project>

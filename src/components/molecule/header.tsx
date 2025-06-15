@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           {/* Desktop Menu */}
           <div className="flex hidden items-center gap-2 md:flex">
             <DownloadButtonWrapper>
-              <Button variant="default" className="text w-[8.125rem]">
+              <Button variant="default" size="header">
                 <Text variant="headButton">소개서 보기</Text>
               </Button>
             </DownloadButtonWrapper>

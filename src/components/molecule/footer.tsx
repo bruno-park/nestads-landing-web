@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Text from "@/components/ui/text";
+import { Button } from "@/components/ui/button";
 import PrivacyModal from "@/components/modal/privacy-modal";
 
 const Footer = () => {
   return (
-    <footer className="item-center flex justify-center bg-[#231815] px-[2.5rem] py-[3.125rem] text-white">
+    <footer className="item-center flex justify-center bg-[#231815] px-[2.5rem] py-[3.125rem] text-footer-gray">
       <div className="flex max-w-7xl items-center gap-[5.625rem]">
         {/* 로고 및 주소 */}
         <div className="flex flex-col gap-10">
@@ -17,7 +18,7 @@ const Footer = () => {
             height={24}
           />
 
-          <div className="whitespace-pre-line py-2 text-sm leading-relaxed text-white">
+          <div className="whitespace-pre-line py-2 text-sm leading-relaxed">
             <Text variant="footerText">주식회사 와이즈버즈</Text>
             <br />
             <Text variant="footerText">
@@ -27,7 +28,7 @@ const Footer = () => {
         </div>
 
         {/* 연락처 */}
-        <div className="self-end py-2 text-sm leading-relaxed text-white">
+        <div className="self-end py-2 text-sm leading-relaxed">
           <div className="flex gap-2">
             <Text variant="footerText">Tel. 02-538-8897</Text>|
             <Text variant="footerText">Email. sales@nestads.com</Text>
@@ -43,12 +44,13 @@ const Footer = () => {
         <div className="flex gap-2.5 self-end py-2">
           <PrivacyModal />
           <Link href="https://www.wisebirds.ai" target="_blank">
-            <Text
-              variant="footerButton"
-              className="rounded-full border border-white px-4 py-1 text-sm transition hover:bg-white hover:text-black"
+            <Button
+              variant="outline"
+              size="footer"
+              className="border-footer-gray bg-transparent"
             >
-              Wisebirds
-            </Text>
+              <Text variant="footerButton">Wisebirds</Text>
+            </Button>
           </Link>
         </div>
       </div>

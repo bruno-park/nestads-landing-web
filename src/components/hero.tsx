@@ -36,7 +36,7 @@ const Hero = () => {
                 구축 가능합니다.
               </Text>
               <DownloadButtonWrapper>
-                <Button className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-primary">
+                <Button className="rounded-full bg-primary" size="body">
                   <Text variant="bodyButton">소개서 보기</Text>
                 </Button>
               </DownloadButtonWrapper>

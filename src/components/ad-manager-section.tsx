@@ -15,7 +15,7 @@ const fadeUp = {
 
 const AdManagerSection = () => {
   return (
-    <Section id="ad-manager-service" className="bg-section-3 py-[6.25rem]">
+    <Section id="ad-manager-service" className="bg-gray-lighter py-[6.25rem]">
       <Container>
         <div className="flex flex-col gap-10">
           <motion.div

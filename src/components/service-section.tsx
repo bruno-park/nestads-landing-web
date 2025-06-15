@@ -41,7 +41,7 @@ const serviceData = [
 
 const ServiceSection = () => {
   return (
-    <Section id="service" className="bg-section-2 py-[6.25rem]">
+    <Section id="service" className="bg-gray-light py-[6.25rem]">
       <Container>
         <div className="px-[8.75rem]">
           <motion.div

@@ -3,7 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Header from "@/components/molecule/header";
 import Footer from "@/components/molecule/footer";
-import { siteDetails } from "@/data/siteDetails";
+import { siteMeta } from "@/data/site-meta";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -34,26 +34,26 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: siteDetails.metadata.title,
-  description: siteDetails.metadata.description,
+  title: siteMeta.metadata.title,
+  description: siteMeta.metadata.description,
   openGraph: {
-    title: siteDetails.metadata.title,
-    description: siteDetails.metadata.description,
-    url: siteDetails.siteUrl,
+    title: siteMeta.metadata.title,
+    description: siteMeta.metadata.description,
+    url: siteMeta.siteUrl,
     type: "website",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 675,
-        alt: siteDetails.siteName,
+        alt: siteMeta.siteName,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteDetails.metadata.title,
-    description: siteDetails.metadata.description,
+    title: siteMeta.metadata.title,
+    description: siteMeta.metadata.description,
     images: ["/images/twitter-image.jpg"],
   },
 };
@@ -66,8 +66,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={pretendard.className}>
       <body>
-        {siteDetails.googleAnalyticsId && (
-          <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />
+        {siteMeta.googleAnalyticsId && (
+          <GoogleAnalytics gaId={siteMeta.googleAnalyticsId} />
         )}
         <Header />
         <main>{children}</main>
