@@ -4,7 +4,7 @@ import Text from "@/components/ui/text";
 const adServerContent = () => {
   return (
     <div className="text-gray-800">
-      <ul className="mx-[2.5rem] list-disc pl-5">
+      <ul className="list-disc pl-5 md:mx-[2.5rem]">
         <li>
           <Text variant="bodyRegular">
             국내No1라이브스트리밍 플랫폼SOOP TV의 성과형 광고 플랫폼SOOP ADS
@@ -22,23 +22,21 @@ const adServerContent = () => {
         </li>
       </ul>
 
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         {/* Dashboard Example */}
         <div className="flex flex-col items-center">
           <Text
             variant="headButton"
-            className="mb-2 mb-[1.875rem] mt-[2.5rem] flex h-[2.1875rem] w-[10.3125rem] items-center justify-center rounded-full bg-black px-4 py-1 text-white"
+            className="mt-[1.875rem] flex h-6 w-32 items-center justify-center rounded-full bg-black px-4 py-1 text-xs text-white md:mb-[1.875rem] md:mt-[2.5rem] md:h-[2.1875rem] md:w-[10.3125rem]"
           >
             대시보드 예시
           </Text>
-          <div className="relative h-[24.6875rem] w-[31.25rem]">
+          <div className="relative h-[18rem] w-[22rem] md:h-[24.6875rem] md:w-[31.25rem]">
             <Image
               src="/images/ad-server/dashboard.png"
               alt="dashboard example"
               fill
-              style={{
-                objectFit: "fill",
-              }}
+              objectFit="contain"
             />
           </div>
         </div>
@@ -47,18 +45,16 @@ const adServerContent = () => {
         <div className="flex flex-col items-center">
           <Text
             variant="headButton"
-            className="mb-2 mb-[1.875rem] mt-[2.5rem] flex h-[2.1875rem] w-[10.3125rem] items-center justify-center rounded-full bg-black px-4 py-1 text-white"
+            className="mt-[1.875rem] flex h-6 w-32 items-center justify-center rounded-full bg-black px-4 py-1 text-xs text-white md:mb-[1.875rem] md:mt-[2.5rem] md:h-[2.1875rem] md:w-[10.3125rem]"
           >
             광고 지면 예시
           </Text>
-          <div className="relative h-[24.6875rem] w-[31.25rem]">
+          <div className="relative h-[18rem] w-[22rem] md:h-[24.6875rem] md:w-[31.25rem]">
             <Image
               src="/images/ad-server/placement.png"
               alt="ad example"
               fill
-              style={{
-                objectFit: "fill",
-              }}
+              objectFit="contain"
             />
           </div>
         </div>

@@ -42,9 +42,12 @@ const serviceData = [
 
 const ServiceSection = () => {
   return (
-    <Section id="service" className="bg-gray-light py-[6.25rem]">
+    <Section
+      id="service"
+      className="bg-gray-light py-[3.125rem] md:py-[6.25rem]"
+    >
       <Container>
-        <div className="px-[8.75rem]">
+        <div className="px-[1.875rem] md:px-[8.75rem]">
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +56,7 @@ const ServiceSection = () => {
           >
             <Text
               variant={"summaryRegular"}
-              className="mb-[6.25rem] block text-center"
+              className="mb-[3.125rem] block text-center md:mb-[6.25rem]"
             >
               <p>와이즈버즈는 국내 주요 서비스 기업의</p>
               <Text variant={"summaryBold"}>
@@ -76,7 +79,7 @@ const ServiceSection = () => {
                   value={`item-${idx}`}
                   className="w-full first:border-t"
                 >
-                  <AccordionTrigger className="w-full py-[1.8125rem] pl-[2.5rem]">
+                  <AccordionTrigger className="w-full py-[1.8125rem] md:pl-[2.5rem]">
                     <div className="flex w-full items-center justify-between gap-4">
                       <Text variant={"subHeadline"}>{item.title}</Text>
                       <div className="mr-2 flex items-center gap-[0.3125rem]">
