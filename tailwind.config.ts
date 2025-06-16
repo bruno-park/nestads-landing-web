@@ -16,6 +16,7 @@ const config: Config = {
         "gray-light": "#ededed",
         "gray-lighter": "#f7f7f7",
         "footer-gray": "#808080",
+        footer: "#231815",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

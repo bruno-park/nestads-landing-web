@@ -13,38 +13,54 @@ type LabelVariant =
   | "footerButton"
   | "privacyText";
 
+type LabelSize = "sm" | "md" | "lg" | "default";
+
 interface LabelProps {
   variant: LabelVariant;
   children: React.ReactNode;
   className?: string;
+  size?: LabelSize;
 }
 
+const sizeStyles: Record<LabelSize, string> = {
+  sm: "text-xs md:text-sm",
+  md: "text-base md:text-lg",
+  lg: "text-xl md:text-2xl",
+  default: "",
+};
+
 const typographyStyles: Record<LabelVariant, string> = {
-  headButton: "md:(font-semibold text-[1rem] tracking-[-0.05em])",
-  title: "md:(font-bold text-[2rem] leading-[2.6875rem] tracking-[-0.02em])",
+  headButton: "md:font-semibold md:text-[1rem] md:font-stretch-[95%])",
+  title:
+    "font-bold text-md  tracking-[-0.02em] font-stretch-[98%] md:text-[2rem] md:leading-[2.6875rem]",
   bodyRegular:
-    "md:(font-normal text-[1rem] leading-[1.6875rem] tracking-[0em])",
+    "font-normal text-sm  tracking-[0em] font-stretch-[100%] md:text-[1rem] md:leading-[1.6875rem]",
   bodySemiBold:
-    "md:(font-semibold text-[1rem] leading-[1.6875rem] tracking-[0em])",
-  bodyButton: "md:(font-semibold text-[1.25rem] tracking-[-0.05em])",
+    "font-semibold text-sm  tracking-[0em] font-stretch-[100%] md:text-[1rem] md:leading-[1.6875rem]",
+  bodyButton: "font-semibold text-md font-stretch-[95%] md:text-[1.25rem]",
   summaryRegular:
-    "md:(font-normal text-[1.5625rem] leading-[2.375rem] tracking-[0.02em])",
+    "font-normal text-md tracking-[-0.02em] font-stretch-[98%] md:text-[1.5625rem] md:leading-[2.375rem] md:tracking-[0.02em] md:font-stretch-[100%]",
   summaryBold:
-    "md:(font-bold text-[1.5625rem] leading-[2.375rem] tracking-[0.02em])",
-  subHeadline: "md:(font-bold text-[1.375rem] tracking-[-0.02em])",
+    "font-bold text-md tracking-[-0.02em] font-stretch-[98%] md:text-[1.5625rem] md:leading-[2.375rem] md:tracking-[0.02em] md:font-stretch-[100%]",
+  subHeadline:
+    "font-bold font-stretch-[100%] text-md md:text-[1.375rem] md:tracking-[-0.02em]",
   footerText:
-    "md:(font-normal text-[0.9375rem] leading-[1.625rem] tracking-[0em])",
-  footerButton: "md:(font-normal text-[0.875rem] tracking-[0em])",
+    "font-normal text-xs tracking-[0em] font-stretch-[100%] md:text-[0.9375rem] md:leading-[1.625rem]",
+  footerButton: "font-normal text-xs font-stretch-[100%] md:text-[0.875rem]",
   privacyText:
-    "md:(block text-black font-stretch-[100%] text-[0.875rem] font-normal leading-[1.375rem] tracking-[-0.02em])",
+    "font-normal md:block md:text-black md:font-stretch-[100%] md:text-[0.875rem] md:leading-[1.375rem] md:tracking-[-0.02em])",
 };
 
 export default function Text({
   variant,
   children,
   className = "",
+  size = "default",
 }: LabelProps) {
   const baseStyle = typographyStyles[variant] || "";
+  const sizeStyle = sizeStyles[size] || "";
 
-  return <span className={`${baseStyle} ${className}`}>{children}</span>;
+  return (
+    <span className={`${baseStyle} ${sizeStyle} ${className}`}>{children}</span>
+  );
 }

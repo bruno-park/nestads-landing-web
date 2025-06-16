@@ -3,7 +3,7 @@
 import Text from "@/components/ui/text";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { X } from "lucide-react";
+import { ChevronLeft, X } from "lucide-react";
 import LabelInput from "@/components/molecule/label-input";
 import { Button } from "@/components/ui/button";
 import React, { ReactNode, useState } from "react";
@@ -29,6 +29,8 @@ import {
 import { InquiryForm } from "@/actions/inquiry-action";
 import Image from "next/image";
 
+type deviceType = "desktop" | "mobile";
+
 const schema = z.object({
   name: z.string().min(1, "*담당자명: 필수 정보입니다."),
   company: z.string().min(1, "*회사명: 필수 정보입니다."),
@@ -37,7 +39,7 @@ const schema = z.object({
     .string()
     .min(1, "*Email: 필수 정보입니다.")
     .email("*Email: 형식이 올바르지 않습니다."),
-  agree: z.boolean().refine((val) => val === true, {
+  agree: z.boolean().refine((val) => val, {
     message: "*필수 약관에 동의해 주세요.",
   }),
 });
@@ -45,10 +47,12 @@ const schema = z.object({
 const InquiryModal = ({
   buttonClassName,
   variant = "default",
+  type = "desktop",
   buttonText,
 }: {
   buttonClassName?: string;
   variant?: "default" | "outline";
+  type?: deviceType;
   buttonText?: string | ReactNode;
 }) => {
   const [open, setOpen] = useState<boolean>(false);
@@ -97,28 +101,48 @@ const InquiryModal = ({
       }}
     >
       <DialogTrigger asChild>
-        <Button
-          variant={variant}
-          className={buttonClassName}
-          onClick={() => setOpen(true)}
-        >
-          {buttonText}
-        </Button>
+        <>
+          {type === "desktop" && (
+            <Button
+              variant={variant}
+              className={buttonClassName}
+              onClick={() => setOpen(true)}
+            >
+              {buttonText}
+            </Button>
+          )}
+          {type === "mobile" && (
+            <Button
+              variant="default"
+              size="header"
+              onClick={() => setOpen(true)}
+              className="relative flex h-10 w-10 rounded-full bg-black"
+            >
+              <Image
+                src="/images/mobile/inquiry-icon.svg"
+                alt="download"
+                fill
+                className="p-2"
+                objectFit="contain"
+              />
+            </Button>
+          )}
+        </>
       </DialogTrigger>
 
-      <DialogContent className="p-5 pb-10">
+      <DialogContent className="px-[1.25rem] pb-10 pt-0 md:p-5">
         {(result && (
-          <DialogHeader className="px-[1.875rem]">
+          <DialogHeader className="pt-5 md:px-[1.875rem] md:pt-0">
             <DialogTitle className="relative">
-              <div className="mb-[1.25rem] mt-[2.8125rem] flex justify-between">
+              <div className="md:mb-[1.25rem] md:mt-[2.8125rem]">
                 <X
-                  className="absolute right-[-1.875rem] top-0 cursor-pointer"
+                  className="absolute top-0 cursor-pointer md:right-[-1.875rem]"
                   onClick={handleModalClose}
                 />
               </div>
             </DialogTitle>
             <DialogDescription asChild>
-              <div className="!mb-[6.875rem] !mt-[4rem] flex w-full flex-col items-center justify-center gap-5">
+              <div className="flex h-full w-full flex-col items-center justify-center gap-5 md:!mb-[6.875rem] md:!mt-[4rem]">
                 <div className="relative flex h-[4.375rem] w-[4.375rem] items-center justify-center">
                   <Image
                     src="/images/success.png"
@@ -130,7 +154,7 @@ const InquiryModal = ({
                 <Text variant="title" className="text-black">
                   신청 완료
                 </Text>
-                <Text variant="bodyRegular" className="text-center">
+                <Text variant="bodyRegular" className="text-center text-xs">
                   문의 신청이 완료되었습니다. <br />
                   접수하신 내용은 입력하신 메일을 통해 안내드리도록 하겠습니다.{" "}
                   <br />
@@ -142,21 +166,25 @@ const InquiryModal = ({
         )) || (
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)}>
-              <DialogHeader className="px-[1.875rem]">
-                <DialogTitle className="relative">
-                  <div className="mb-[1.25rem] mt-[2.8125rem] flex justify-between">
-                    <span className="font-stretch-[100%] text-[1.5625rem] font-semibold leading-[2.375rem] tracking-[-0.02em]">
+              <DialogHeader className="md:px-[1.875rem]">
+                <DialogTitle className="relative pb-[1.875rem] md:pb-0">
+                  <div className="flex h-[3.75rem] items-center gap-2 border-b border-black md:mb-[1.25rem] md:mt-[2.8125rem] md:h-auto md:border-0">
+                    <ChevronLeft
+                      className="cursor-pointer md:hidden"
+                      onClick={handleModalClose}
+                    />
+                    <span className="font-stretch-[100%] text-lg font-semibold leading-[2.375rem] tracking-[-0.02em] md:text-[1.5625rem]">
                       Nest Ads Manager 문의 신청
                     </span>
                     <X
-                      className="absolute right-[-1.875rem] top-0 cursor-pointer"
+                      className="absolute right-[-1.875rem] top-0 hidden cursor-pointer md:block"
                       onClick={handleModalClose}
                     />
                   </div>
                 </DialogTitle>
                 <DialogDescription asChild>
-                  <div className="flex w-full flex-col">
-                    <span className="font-regular font-stretch-[100%] mb-10 text-[1rem] leading-[1.625rem] tracking-[-0.02em]">
+                  <div className="flex max-h-[75vh] w-full flex-col overflow-y-scroll px-[0.625rem] md:overflow-y-visible md:p-0">
+                    <span className="font-regular font-stretch-[100%] mb-[1.875rem] text-left leading-[1.625rem] tracking-[-0.02em] md:mb-10 md:text-[1rem]">
                       서비스 이용을 원하시는 고객사께서는 아래 정보를 남겨
                       주시면 담당자를 통해 연락드리겠습니다.
                     </span>
@@ -202,7 +230,7 @@ const InquiryModal = ({
                         )}
                       />
                     </div>
-                    <div className="mb-5 flex items-center justify-center gap-[0.9375rem]">
+                    <div className="flex flex-col items-center justify-center gap-[0.9375rem] md:mb-5 md:flex-row">
                       <FormField
                         control={form.control}
                         name="service"
@@ -243,8 +271,10 @@ const InquiryModal = ({
                       />
                     </div>
 
-                    <div className="flex w-full flex-col gap-[0.9375rem]">
-                      <Label required>약관동의</Label>
+                    <div className="flex w-full flex-col gap-2 text-left md:gap-[0.9375rem]">
+                      <Label required className="text-xs">
+                        약관동의
+                      </Label>
 
                       <FormField
                         control={form.control}
@@ -258,7 +288,7 @@ const InquiryModal = ({
                                   error={!!form.formState.errors.agree?.message}
                                   onCheckedChange={field.onChange}
                                 />
-                                <Label className="font-regular font-stretch-[100%] text-[0.9375rem] tracking-[-0.02em]">
+                                <Label className="font-regular font-stretch-[100%] text-xs tracking-[-0.02em] md:text-[0.9375rem]">
                                   [필수] 개인정보 수집 및 이용에 동의합니다.
                                 </Label>
                                 <FormMessage />
@@ -268,8 +298,8 @@ const InquiryModal = ({
                         )}
                       />
 
-                      <div className="rounded-xl border bg-gray-100 p-6">
-                        <div className="flex flex-col gap-4">
+                      <div className="rounded-xl border bg-gray-100 p-3 text-xs md:p-6">
+                        <div className="flex flex-col md:gap-4">
                           <Text variant="privacyText">
                             NEST ADS MANAGER 서비스 가입 문의 등 고객 상담을
                             위하여 아래와 같이 개인정보를 수집·이용하고자
@@ -304,12 +334,12 @@ const InquiryModal = ({
                 </DialogDescription>
               </DialogHeader>
               <DialogFooter>
-                <div className="mt-10 flex w-full items-center justify-center">
+                <div className="flex w-full items-center justify-center py-4 md:mt-10">
                   <Button
                     type="submit"
-                    className="h-[2.8125rem] w-[10.3125rem] rounded-full bg-black"
+                    className="h-8 w-24 rounded-full bg-black text-xs md:h-[2.8125rem] md:w-[10.3125rem] md:text-[1rem]"
                   >
-                    신청하기
+                    <Text variant="bodyButton">신청 하기</Text>
                   </Button>
                 </div>
               </DialogFooter>

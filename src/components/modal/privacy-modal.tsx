@@ -1,7 +1,7 @@
 "use client";
 
 import { Label } from "@/components/ui/label";
-import { X } from "lucide-react";
+import { ChevronLeft, X } from "lucide-react";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
@@ -28,22 +28,26 @@ const PrivacyModal = () => {
           <Text variant="footerButton">개인정보처리방침</Text>
         </Button>
       </DialogTrigger>
-      <DialogContent className="p-5">
-        <DialogHeader className="px-[1.875rem]">
-          <DialogTitle className="relative">
-            <div className="mb-[1.25rem] mt-[2.8125rem] flex justify-between">
-              <span className="font-stretch-[100%] text-[1.5625rem] font-semibold leading-[2.375rem] tracking-[-0.02em]">
+      <DialogContent className="pb-10 pt-0 md:p-5">
+        <DialogHeader className="md:max-h-none md:overflow-visible md:px-[1.875rem]">
+          <DialogTitle className="relative pb-[1.875rem] md:pb-0">
+            <div className="flex h-[3.75rem] items-center gap-2 border-b border-black md:mb-[1.25rem] md:mt-[2.8125rem] md:h-auto md:border-0">
+              <ChevronLeft
+                className="cursor-pointer md:hidden"
+                onClick={() => setOpen(false)}
+              />
+              <span className="font-stretch-[100%] text-lg font-semibold leading-[2.375rem] tracking-[-0.02em] md:text-[1.5625rem]">
                 개인정보 수집·이용 동의
               </span>
               <X
-                className="absolute right-[-1.875rem] top-0 cursor-pointer"
+                className="absolute right-[-1.875rem] top-0 hidden cursor-pointer md:block"
                 onClick={() => setOpen(false)}
               />
             </div>
           </DialogTitle>
           <DialogDescription>
-            <div className="mb-[2.8125rem] flex w-full flex-col gap-10">
-              <Label className="text-[0.9375rem] font-normal leading-[1.625rem] tracking-[-0.0125em]">
+            <div className="flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto pb-[1.875rem] md:mb-[2.8125rem] md:gap-10 md:pb-0">
+              <Label className="text-left text-sm font-normal leading-relaxed tracking-normal md:text-[0.9375rem] md:leading-[1.625rem] md:tracking-[-0.0125em]">
                 ▣ 개인정보의 수집목적 및 이용목적 <br />
                 와이즈버즈가 고객으로부터 개인정보를 수집하는 이유와 개인정보의
                 사용목적은 NEST ADS MANAGER 사이트(http://nestads.com)를 통해
@@ -51,7 +55,7 @@ const PrivacyModal = () => {
                 와이즈버즈는 고객이 전달하신 각종 문의사항에 대해 신속하고
                 정확한 답변을 드리기 위해 개인정보를 요구하고 있습니다.
               </Label>
-              <Label className="text-[0.9375rem] font-normal leading-[1.625rem] tracking-[-0.0125em]">
+              <Label className="text-left text-sm font-normal leading-relaxed tracking-normal md:text-[0.9375rem] md:leading-[1.625rem] md:tracking-[-0.0125em]">
                 ▣ 개인정보 수집 항목 및 수집방법 <br />
                 와이즈버즈는 적법하고 공정한 수단을 통해 서비스 계약의 성립 및
                 이행에 필요한 최소한의 개인정보를 수집합니다. <br />
@@ -65,7 +69,7 @@ const PrivacyModal = () => {
                 예외로 합니다.
               </Label>
 
-              <Label className="text-[0.9375rem] font-normal leading-[1.625rem] tracking-[-0.0125em]">
+              <Label className="text-left text-sm font-normal leading-relaxed tracking-normal md:text-[0.9375rem] md:leading-[1.625rem] md:tracking-[-0.0125em]">
                 ▣ 개인정보의 보유 및 이용기간 <br />
                 와이즈버즈에 제공한 고객님의 개인정보는 문의사항 작성일로부터
                 해결 완료 시까지 서비스 제공을 위해 이용되며, 고객의 요청이 있을
