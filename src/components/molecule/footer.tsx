@@ -48,9 +48,10 @@ const Footer = () => {
           <PrivacyModal />
 
           <Button
+            asChild
             variant="outline"
             size="footer"
-            className="border-footer-gray bg-transparent"
+            className="border-footer-gray bg-transparent active:bg-white md:hover:border-transparent md:hover:bg-white md:hover:text-black"
           >
             <Link href="https://www.wisebirds.ai" target="_blank">
               <Text variant="footerButton">Wisebirds</Text>
